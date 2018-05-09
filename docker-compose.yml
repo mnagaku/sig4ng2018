@@ -6,4 +6,4 @@ services:
     image: mnagaku/lc-minimal-notebook
     ports:
       - "8888:8888"
-    command: bash -c "git clone --depth 1 https://github.com/mnagaku/sig4ng2018.git ; jupyter notebook --NotebookApp.token=''"
+    command: bash -c "git clone --depth 1 https://github.com/mnagaku/sig4ng2018.git ; set +u ; . /usr/local/bin/start.sh jupyter notebook --NotebookApp.token=''"
